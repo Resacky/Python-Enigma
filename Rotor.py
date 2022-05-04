@@ -1,10 +1,5 @@
 def decodeWiring(encoding):
-
-    charWiring = list(encoding)
-    wiring = [None] * len(charWiring)
-    for x in wiring:
-        wiring[x] = charWiring[x] - 65
-    return wiring
+    return [x - 65 for x in list(encoding)]
 
 
 def __init__(self, name, encoding, rotorPOS, notchPOS, ringSetting):
