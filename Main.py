@@ -1,10 +1,16 @@
 import Keyboard
+import Plugboard
+import Rotor
 
 
 def menu():
     print("Welcome to my version of the Enigma machine via Python 1.0")
 
-    # Here is code to modify the configuration
+    # Plugboard config
+    Plugboard.plugConfig()
+
+    # Rotor config
+
 
     while True:
 
@@ -13,7 +19,7 @@ def menu():
         # here goes code to actually encrypt
 
         menuInput = input(
-            "Would you like to encrypt another message with the same configuration or change the config?\n")
+            "Would you like to encrypt another message with the same configuration or change the config?\n").upper()
 
         if menuInput == "EXIT":
             break
