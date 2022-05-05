@@ -21,6 +21,10 @@ def menu():
     rotor2 = rotorConfig()
     rotor3 = rotorConfig()
 
+    # Reflector config
+
+
+
     while True:
 
         message = input("Please write your message: \n").upper()
@@ -31,7 +35,7 @@ def menu():
             "Would you like to encrypt another message with the same configuration or change the config?\n").upper()
 
         if menuInput == "EXIT":
-            break
+            exit()
         elif menuInput == "CHANGE CONFIG":
             menu()
 

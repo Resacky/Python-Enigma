@@ -1,5 +1,18 @@
 import Keyboard
 
+#add remaining methods
+
+name = ''
+forwardWiring = ''
+backwardWiring = ''
+rotorPOS = ''
+notchPOS = ''
+ringSetting = ''
+
+
+def reset():
+    rotorPOS = 0
+
 
 # This method is to create the individual rotors with already pre-generated configurations
 def CreateRotor(name, rotorPOS, ringSetting):
