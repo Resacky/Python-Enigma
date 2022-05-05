@@ -3,6 +3,13 @@ import Plugboard
 import Rotor
 
 
+def rotorConfig():
+    rotorName = input("Config for first rotor?\n")
+    rotorPOS = input("Rotor's position\n")
+    rotorSetting = input("Rotor's ring setting\n")
+    return Rotor.CreateRotor(rotorName, rotorPOS, rotorSetting)
+
+
 def menu():
     print("Welcome to my version of the Enigma machine via Python 1.0")
 
@@ -10,7 +17,9 @@ def menu():
     Plugboard.plugConfig()
 
     # Rotor config
-
+    rotor1 = rotorConfig()
+    rotor2 = rotorConfig()
+    rotor3 = rotorConfig()
 
     while True:
 

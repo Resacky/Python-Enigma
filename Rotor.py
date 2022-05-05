@@ -1,4 +1,4 @@
-
+import Keyboard
 
 
 # This method is to create the individual rotors with already pre-generated configurations
@@ -45,7 +45,12 @@ def decodeWiring(encoding):
 
 
 def inverseWiring(primaryWiring):
-    return [primaryWiring[(x + 1) * -1] for x in range(len(primaryWiring))]
+    inverse = [None] * len(primaryWiring)
+    i = 0
+    for x in primaryWiring:
+        inverse[x] = i
+        i += 1
+    return inverse
 
 
 def __init__(self, name, encoding, rotorPOS, notchPOS, ringSetting):
@@ -55,4 +60,3 @@ def __init__(self, name, encoding, rotorPOS, notchPOS, ringSetting):
     self.rotorPOS = rotorPOS
     self.notchPOS = notchPOS
     self.ringSetting = ringSetting
-
